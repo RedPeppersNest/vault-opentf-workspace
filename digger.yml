@@ -1,0 +1,5 @@
+projects:
+  - name: vault-opentf-workspace
+    dir: vault-opentf-workspace
+    opentofu: true
+    terraform: false
