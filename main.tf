@@ -1,8 +1,8 @@
-resource "random_string" "example" {
-  length  = 16
-  special = false
+resource "vault_mount" "kvv2" {
+  path        = "secret"
+  type        = "kv"
+  options     = { 
+    version = "2"
 }
-
-output "random_value" {
-  value = random_string.example.result
+  description = "KV Version 2 secret engine mount"
 }
